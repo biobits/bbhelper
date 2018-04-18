@@ -171,7 +171,8 @@ theme_bb <- function(theme = "main", ...) {
   if (theme == "main") {
     theme_minimal(base_size = 11, base_family = "sans")+
       theme(axis.title = element_text(vjust=0.1),axis.title.y=element_text(vjust=0.5),legend.position="bottom",legend.key.size = unit(0.3,"cm"),...)
-  } else { # To Do: Add more custom themes
+  } else {
+    # To Do: Add more custom themes
     theme_minimal(base_size = 11, base_family = "sans")+
       theme(axis.title = element_text(vjust=0.1),axis.title.y=element_text(vjust=0.5),legend.position="bottom",legend.key.size = unit(0.3,"cm"),...)
   }
