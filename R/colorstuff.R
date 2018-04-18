@@ -13,7 +13,10 @@ default_colors <- c(
   `Mexican Red` = "#B22229",
   `Bronco`  = "#8c8c8c")
 
-
+bb_themes <- c(
+  `main`        = "main",
+  `dark`      = "dark",
+  `light`       = "light")
 
 
 ##########################################################################################################################################################################################################
@@ -80,7 +83,9 @@ default_palettes <- list(
 
   `mixed` = bb_cols("Congress Blue", "Tahiti Gold", "Mexican Red", "Atlantis"),
 
-  `grey`  = bb_cols("Bermuda Gray", "Bronco")
+  `grey`  = bb_cols("Bermuda Gray", "Bronco"),
+
+  `complete`  = bb_cols("Tahiti Gold", "Amber", "Atlantis","Bermuda Gray","Downy","Congress Blue","Mexican Red","Bronco")
 )
 
 ##########################################################################################################################################################################################################
@@ -150,6 +155,27 @@ scale_fill_bb <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
   } else {
     scale_fill_gradientn(colours = pal(256), ...)
   }
+}
+##########################################################################################################################################################################################################
+##Function to streamline default  ggplot themeing
+##########################################################################################################################################################################################################
+#' Fill scale constructor for bb colors
+#'
+#' @param theme Character name of theme in bb_palettes
+#' @param ... Additional arguments passed to theme()
+#'
+#'
+theme_bb <- function(theme = "main", ...) {
+
+
+  if (theme == "main") {
+    theme_minimal(base_size = 11, base_family = "sans")+
+      theme(axis.title = element_text(vjust=0.1),axis.title.y=element_text(vjust=0.5),legend.position="bottom",legend.key.size = unit(0.3,"cm"),...)
+  } else { # To Do: Add more custom themes
+    theme_minimal(base_size = 11, base_family = "sans")+
+      theme(axis.title = element_text(vjust=0.1),axis.title.y=element_text(vjust=0.5),legend.position="bottom",legend.key.size = unit(0.3,"cm"),...)
+  }
+
 }
 
 
