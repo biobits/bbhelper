@@ -75,7 +75,7 @@ bb_cols <- function(...) {
 
 
 default_palettes <- list(
-  `main`  = bb_cols("Tahiti Gold", "Amber","Congress Blue"),# "Atlantis"),
+  `main`  = bb_cols("Tahiti Gold", "Amber","Congress Blue" ),# "Atlantis"),
 
   `cool`  = bb_cols("Atlantis", "Bermuda Gray"),
 
