@@ -13,10 +13,12 @@ default_colors <- c(
   `Mexican Red` = "#B22229",
   `Bronco`  = "#8c8c8c")
 
+
 bb_themes <- c(
   `main`        = "main",
   `dark`      = "dark",
   `light`       = "light")
+
 
 
 ##########################################################################################################################################################################################################
@@ -75,6 +77,7 @@ bb_cols <- function(...) {
 
 
 default_palettes <- list(
+
   `main`  = bb_cols("Tahiti Gold", "Amber","Congress Blue"),# "Atlantis"),
 
   `cool`  = bb_cols("Atlantis", "Bermuda Gray"),
@@ -83,9 +86,11 @@ default_palettes <- list(
 
   `mixed` = bb_cols("Congress Blue", "Tahiti Gold", "Mexican Red", "Atlantis"),
 
+
   `grey`  = bb_cols("Bermuda Gray", "Bronco"),
 
   `complete`  = bb_cols("Tahiti Gold", "Amber", "Atlantis","Bermuda Gray","Downy","Congress Blue","Mexican Red","Bronco")
+
 )
 
 ##########################################################################################################################################################################################################
@@ -156,6 +161,7 @@ scale_fill_bb <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
+
 ##########################################################################################################################################################################################################
 ##Function to streamline default  ggplot themeing
 ##########################################################################################################################################################################################################
@@ -178,6 +184,7 @@ theme_bb <- function(theme = "main", ...) {
   }
 
 }
+
 
 
 
