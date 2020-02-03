@@ -38,7 +38,7 @@ bb_themes <- c(
 #'@export
 getBBColors<-function(x) {
 
-  cols2<-c("#EF7B05","#FCBE0E","#8ABD24","#7296AF","#68C3CD","#004992","#B22229","#8c8c8c")
+  cols2<-c("#004992","#B22229","#EF7B05","#FCBE0E","#8ABD24","#7296AF","#68C3CD","#8c8c8c")
   if(x<9){mypalette<-cols2[1:x]
   }else{
     mypalette<-RColorBrewer::brewer.pal(9,"Set1")

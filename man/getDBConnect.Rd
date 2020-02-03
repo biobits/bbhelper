@@ -4,8 +4,13 @@
 \alias{getDBConnect}
 \title{R Function für generating a custom colorpallette of length x}
 \usage{
-getDBConnect(dbase = "ucchscience", dbuser = NULL, dbpwd = NULL,
-  useconfig = T, configfile = NULL)
+getDBConnect(
+  dbase = "ucchscience",
+  dbuser = NULL,
+  dbpwd = NULL,
+  useconfig = T,
+  configfile = NULL
+)
 }
 \arguments{
 \item{dbase}{:character vector - Name of ODBC-Connection as specified in odbc.ini}
